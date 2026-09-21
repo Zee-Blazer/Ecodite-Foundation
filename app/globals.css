@@ -1,0 +1,247 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   ECODITE FOUNDATION — Design System Tokens
+   Tailwind CSS v4 @theme configuration
+   ========================================================================== */
+
+@theme {
+  /* ---- Colours --------------------------------------------------------- */
+  --color-green-950: #0B1F14;
+  --color-green-900: #10291B;
+  --color-green-800: #17402A;
+  --color-green-700: #21573A;
+  --color-green-500: #5E9C3F;
+
+  --color-sage-100: #E3ECDB;
+  --color-sage-50: #F0F4EA;
+  --color-cream: #FAF7F0;
+  --color-white: #FFFFFF;
+
+  --color-ink: #17201A;
+  --color-ink-muted: #4A5750;
+  --color-line: #D9DFD0;
+  --color-line-dark: rgba(250, 247, 240, 0.16);
+
+  --color-sun-500: #EE8B2B;
+  --color-sun-700: #A34A06;
+
+  --color-plum-700: #7A3B7A;
+
+  /* ---- Typography ------------------------------------------------------ */
+  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
+  --font-body: var(--font-instrument-sans), system-ui, -apple-system, sans-serif;
+
+  /* ---- Motion ---------------------------------------------------------- */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 200ms;
+  --duration-base: 400ms;
+  --duration-slow: 600ms;
+  --duration-slower: 800ms;
+  --stagger: 80ms;
+
+  /* ---- Spacing (4px base) ---------------------------------------------- */
+  --section-padding: clamp(4rem, 8vw, 9rem);
+
+  /* ---- Radii ----------------------------------------------------------- */
+  --radius-image: 2px;
+  --radius-card: 4px;
+  --radius-input: 6px;
+  --radius-tag: 999px;
+}
+
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background-color: var(--color-cream);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==========================================================================
+   Typography Scale (utility classes)
+   ========================================================================== */
+
+.text-display-xl {
+  font-family: var(--font-display);
+  font-size: clamp(2.75rem, 1.5rem + 5.5vw, 6.5rem);
+  line-height: 0.98;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  font-variation-settings: "opsz" 144, "SOFT" 0, "WONK" 0;
+}
+
+.text-display-lg {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 1.4rem + 3.6vw, 4.5rem);
+  line-height: 1.02;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+  font-variation-settings: "opsz" 72, "SOFT" 0, "WONK" 0;
+}
+
+.text-h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 1.3rem + 1.8vw, 3rem);
+  line-height: 1.1;
+  font-weight: 500;
+  font-variation-settings: "opsz" 48, "SOFT" 0, "WONK" 0;
+}
+
+.text-h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 1.1rem + 0.7vw, 1.75rem);
+  line-height: 1.2;
+  font-weight: 500;
+  font-variation-settings: "opsz" 36, "SOFT" 0, "WONK" 0;
+}
+
+.text-body-lg {
+  font-size: clamp(1.0625rem, 1rem + 0.3vw, 1.25rem);
+  line-height: 1.6;
+}
+
+.text-body {
+  font-size: 1rem;
+  line-height: 1.65;
+  max-width: 65ch;
+}
+
+.text-eyebrow {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   Focus Styles
+   ========================================================================== */
+
+:focus-visible {
+  outline: 2px solid var(--color-sun-500);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ==========================================================================
+   Motion Utilities
+   ========================================================================== */
+
+@media (prefers-reduced-motion: no-preference) {
+  .motion-safe-fade-in {
+    animation: fadeIn var(--duration-base) var(--ease) both;
+  }
+
+  .motion-safe-slide-up {
+    animation: slideUp var(--duration-slow) var(--ease) both;
+  }
+
+  .motion-safe-draw {
+    animation: drawLine var(--duration-slow) var(--ease) both;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes drawLine {
+  from {
+    stroke-dashoffset: var(--dash-length);
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Page transition */
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.page-transition-enter {
+  animation: pageEnter 300ms var(--ease) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-transition-enter {
+    animation: none;
+  }
+}
+
+/* ==========================================================================
+   Scrollbar
+   ========================================================================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-sage-50);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-line);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-ink-muted);
+}
+
+/* ==========================================================================
+   Utilities
+   ========================================================================== */
+
+/* Section backgrounds */
+.section-cream { background-color: var(--color-cream); }
+.section-sage-50 { background-color: var(--color-sage-50); }
+.section-sage-100 { background-color: var(--color-sage-100); }
+.section-green-800 { background-color: var(--color-green-800); }
+.section-green-900 { background-color: var(--color-green-900); }
+.section-green-950 { background-color: var(--color-green-950); }
+
+/* Body scroll lock (for mobile menu / lightbox) */
+.body-scroll-locked {
+  overflow: hidden;
+  position: fixed;
+  inset: 0;
+  width: 100%;
+}
