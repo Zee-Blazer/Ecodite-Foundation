@@ -25,7 +25,10 @@ export async function generateMetadata(): Promise<Metadata> {
       card: 'summary_large_image',
     },
     icons: {
-      icon: '/favicon.ico',
+      icon: [
+        { url: '/brand/logo-placeholder.svg', type: 'image/svg+xml' },
+      ],
+      apple: '/brand/logo-placeholder.svg',
     }
   };
 }
