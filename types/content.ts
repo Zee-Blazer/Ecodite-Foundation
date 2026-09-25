@@ -235,10 +235,11 @@ export interface ChairmanData {
   name: PlaceholderText
   title: PlaceholderText
   portrait: MediaSlot
+  welcomeHeadline?: string
   welcomeMessage: PlaceholderText
-  biography: PlaceholderText
-  philosophy: PlaceholderText
-  foundationVision: PlaceholderText
+  biography?: PlaceholderText
+  philosophy?: PlaceholderText
+  foundationVision?: PlaceholderText
   signature?: MediaSlot
   video?: MediaSlot
   isPlaceholder: boolean

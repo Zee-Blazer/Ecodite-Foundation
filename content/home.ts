@@ -22,14 +22,23 @@ export const homeStatement: HomeStatement = {
 };
 
 export const homeChairmanPreview: HomeChairmanPreview = {
-  portrait: { src: '/images/leadership/founder-portrait.png', alt: 'Portrait of the Ecodite Foundation Chairman', ratio: '4:5', description: 'Portrait of Chairman', isPlaceholder: false },
-  eyebrow: "Chairman's corner",
-  welcomeHeadline: 'Welcome to Ecodite Foundation',
-  quote: { value: "[CHAIRMAN'S MESSAGE]", isPlaceholder: true },
-  signature: { value: '[SIGNATURE]', isPlaceholder: true },
-  name: { value: '[CHAIRMAN NAME]', isPlaceholder: true },
-  title: 'Chairman, Board of Trustees',
-  link: { label: 'Read the full message', href: '/chairmans-corner' }
+  portrait: {
+    src: '/images/leadership/edith-chukwuyem-osiagwu.jpg',
+    alt: 'Portrait of Edith Chukwuyem Osiagwu, Founder of Ecodite Educational Foundation',
+    ratio: '4:5',
+    description: 'Portrait of Edith Chukwuyem Osiagwu',
+    isPlaceholder: false,
+  },
+  eyebrow: "Chairman's Corner",
+  welcomeHeadline: 'Welcome to Ecodite Educational Foundation',
+  quote: {
+    value: 'At Ecodite, we believe that every child deserves an opportunity to learn, grow, discover their potential and build a meaningful future.',
+    isPlaceholder: false,
+  },
+  signature: { value: 'Edith Chukwuyem Osiagwu', isPlaceholder: false },
+  name: { value: 'Edith Chukwuyem Osiagwu', isPlaceholder: false },
+  title: 'Founder, Ecodite Educational Foundation',
+  link: { label: 'Read the full message', href: '/chairmans-corner' },
 };
 
 export const homeSupportCta: HomeSupportCta = {

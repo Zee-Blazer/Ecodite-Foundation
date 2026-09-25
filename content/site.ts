@@ -7,8 +7,8 @@ export const siteConfig: SiteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://ecoditefoundation.org',
   contact: {
     address: { value: 'Placeholder Address', isPlaceholder: true },
-    email: { value: 'placeholder@example.com', isPlaceholder: true },
-    phone: { value: '+2340000000000', isPlaceholder: true },
+    email: { value: 'info@ecoditefoundation.org', isPlaceholder: false },
+    phone: { value: '08127982687', isPlaceholder: false },
   },
   socialLinks: [
     { platform: 'twitter', url: '', label: 'Twitter' },
