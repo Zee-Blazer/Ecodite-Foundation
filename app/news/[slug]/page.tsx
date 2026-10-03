@@ -12,8 +12,13 @@ export function generateStaticParams() {
   }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const article = getNewsBySlug(params.slug);
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const article = getNewsBySlug(slug);
   if (!article) return { title: 'Not Found' };
   
   return {
@@ -27,8 +32,13 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   };
 }
 
-export default function ArticlePage({ params }: { params: { slug: string } }) {
-  const article = getNewsBySlug(params.slug);
+export default async function ArticlePage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const article = getNewsBySlug(slug);
   const config = getSiteConfig();
   
   if (!article) {

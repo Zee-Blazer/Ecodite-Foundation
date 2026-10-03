@@ -11,7 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
   
   return {
     title: {
-      default: `${config.name} | Create. Learn. Become.`,
+      default: `${config.name} | Learn, Create, Become.`,
       template: `%s | ${config.name}`
     },
     description: config.description,
@@ -39,8 +39,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${fraunces.variable} ${instrumentSans.variable}`}>
-      <body>
+    <html lang="en" suppressHydrationWarning className={`${fraunces.variable} ${instrumentSans.variable}`}>
+      <body suppressHydrationWarning>
         <SkipToContent />
         <Navbar />
         <main id="main-content">

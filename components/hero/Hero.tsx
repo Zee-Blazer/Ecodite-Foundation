@@ -48,9 +48,6 @@ export default function Hero() {
               <Button href={data.primaryCta.href} variant="inverse">
                 {data.primaryCta.label}
               </Button>
-              <Button href={data.secondaryCta.href} variant="secondary" onDark>
-                {data.secondaryCta.label}
-              </Button>
             </div>
           </div>
         </Container>

@@ -12,8 +12,13 @@ export function generateStaticParams() {
   }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const event = getEventBySlug(params.slug);
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const event = getEventBySlug(slug);
   if (!event) return { title: 'Not Found' };
   
   return {
@@ -22,8 +27,13 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   };
 }
 
-export default function EventPage({ params }: { params: { slug: string } }) {
-  const event = getEventBySlug(params.slug);
+export default async function EventPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const event = getEventBySlug(slug);
   const config = getSiteConfig();
   
   if (!event) {

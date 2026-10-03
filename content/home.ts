@@ -2,11 +2,10 @@ import type { HeroData, HomeIntro, HomeStatement, HomeChairmanPreview, HomeSuppo
 
 export const heroData: HeroData = {
   eyebrow: 'ECODITE FOUNDATION',
-  headline: { value: 'Create. Learn. Become.', isPlaceholder: false, status: 'draft' },
+  headline: { value: 'Learn, Create, Become.', isPlaceholder: false, status: 'draft' },
   supportCopy: { value: 'Creating opportunities for young people to learn, discover their potential, develop practical skills and build a future shaped by creativity and knowledge.', isPlaceholder: false, status: 'draft' },
   primaryCta: { label: 'EXPLORE OUR PROGRAMS', href: '/programs' },
-  secondaryCta: { label: 'SUPPORT OUR MISSION', href: '/donate' },
-  media: { src: '/videos/ecodite-hero.mp4', alt: 'Ecodite Foundation students and mentors at work', ratio: '16:9', description: 'Documentary-style hero video or image: young Nigerian people in a workshop or classroom, natural light, warm grade. Candid, not posed.', isPlaceholder: false }
+  media: { src: '/videos/hero-vid-1.mp4', alt: 'School kids actively learning and collaborating with computers', ratio: '16:9', description: 'Video of school kids engaged in study, technology, and learning sessions.', isPlaceholder: false }
 };
 
 export const homeIntro: HomeIntro = {

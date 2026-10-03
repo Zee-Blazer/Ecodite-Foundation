@@ -19,11 +19,33 @@ export const siteConfig: SiteConfig = {
   ],
   nav: [
     { label: 'Home', href: '/' },
-    { label: 'About Us', href: '/about' },
-    { label: "Chairman's Corner", href: '/chairmans-corner' },
-    { label: 'Our Programs', href: '/programs' },
-    { label: 'Gallery', href: '/gallery' },
-    { label: 'News & Updates', href: '/news' },
+    {
+      label: 'About Us',
+      href: '/about',
+      children: [
+        { label: 'Who We Are', href: '/about' },
+        { label: "Chairman's Corner", href: '/chairmans-corner' },
+      ],
+    },
+    {
+      label: 'Our Programs',
+      href: '/programs',
+      children: [
+        { label: 'All Programs', href: '/programs' },
+        { label: 'Library', href: '/programs/library' },
+        { label: 'Resource Center', href: '/programs/resource-center' },
+        { label: 'Vocational Training', href: '/programs/vocational-training' },
+        { label: 'Mentorship', href: '/programs/mentorship' },
+      ],
+    },
+    {
+      label: 'Media',
+      href: '/gallery',
+      children: [
+        { label: 'Gallery', href: '/gallery' },
+        { label: 'News & Updates', href: '/news' },
+      ],
+    },
     { label: 'Contact', href: '/contact' },
   ],
   donateEnabled: true,

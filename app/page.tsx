@@ -1,7 +1,6 @@
 import Hero from '@/components/hero/Hero'
 import IntroSplit from '@/components/sections/IntroSplit'
 import Statement from '@/components/sections/Statement'
-import ChairmanPreview from '@/components/sections/ChairmanPreview'
 import ProgramsShowcase from '@/components/sections/ProgramsShowcase'
 import ImpactStats from '@/components/sections/ImpactStats'
 import VisualStory from '@/components/sections/VisualStory'
@@ -92,10 +91,7 @@ export default function HomePage() {
       {/* 3. Statement */}
       <Statement />
 
-      {/* 4. Chairman's Corner */}
-      <ChairmanPreview />
-
-      {/* 5. Programs */}
+      {/* 4. Programs */}
       <ProgramsShowcase />
 
       {/* 6. Impact */}

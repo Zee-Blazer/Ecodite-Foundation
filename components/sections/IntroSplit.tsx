@@ -40,6 +40,7 @@ export default function IntroSplit() {
                     src={data.image.src} 
                     alt={data.image.alt} 
                     fill 
+                    sizes="(min-width: 768px) 30vw, 80vw"
                     className="object-cover rounded-sm" 
                   />
                 )}

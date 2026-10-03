@@ -73,7 +73,7 @@ export interface HeroData {
   headline: PlaceholderText
   supportCopy: PlaceholderText
   primaryCta: { label: string; href: string }
-  secondaryCta: { label: string; href: string }
+  secondaryCta?: { label: string; href: string }
   media: MediaSlot
 }
 

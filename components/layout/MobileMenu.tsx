@@ -85,14 +85,29 @@ export default function MobileMenu({ isOpen, onClose, navItems, socialLinks }: M
       <nav className="flex-1 overflow-y-auto px-6 pb-24 flex flex-col">
         <div className="flex flex-col gap-2 my-auto">
           {navItems.map((item) => (
-            <Link
-              key={item.label}
-              href={item.href}
-              className="text-display-lg min-h-[48px] flex items-center hover:text-sun-500 transition-colors"
-              onClick={onClose}
-            >
-              {item.label}
-            </Link>
+            <div key={item.label} className="flex flex-col">
+              <Link
+                href={item.href}
+                className="text-display-lg min-h-[48px] flex items-center hover:text-sun-500 transition-colors"
+                onClick={onClose}
+              >
+                {item.label}
+              </Link>
+              {item.children && (
+                <div className="pl-4 flex flex-col gap-1.5 pb-2">
+                  {item.children.map((child) => (
+                    <Link
+                      key={child.label}
+                      href={child.href}
+                      className="text-body-lg text-cream/70 hover:text-sun-500 transition-colors py-1"
+                      onClick={onClose}
+                    >
+                      ↳ {child.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
           ))}
         </div>
         

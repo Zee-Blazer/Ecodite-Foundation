@@ -84,6 +84,55 @@ export default function NavbarClient({
               const isActive =
                 pathname === item.href ||
                 (pathname?.startsWith(item.href) && item.href !== '/')
+              const hasChildren = item.children && item.children.length > 0
+
+              if (hasChildren) {
+                return (
+                  <div key={item.label} className="relative group h-full flex items-center">
+                    <Link
+                      href={item.href}
+                      className={clsx(
+                        'text-[15px] font-medium transition-colors h-full flex items-center gap-1.5 border-b-2',
+                        isActive
+                          ? 'border-sun-500'
+                          : 'border-transparent hover:border-sun-500/50'
+                      )}
+                    >
+                      <span>{item.label}</span>
+                      <svg
+                        className="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180 opacity-70"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </Link>
+
+                    {/* Dropdown Menu */}
+                    <div className="absolute top-[calc(100%-2px)] left-0 min-w-[220px] py-2 bg-cream text-ink rounded-xl shadow-xl border border-line opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50 before:content-[''] before:absolute before:-top-3 before:left-0 before:right-0 before:h-3">
+                      {item.children!.map((child) => {
+                        const isChildActive = pathname === child.href;
+                        return (
+                          <Link
+                            key={child.label}
+                            href={child.href}
+                            className={clsx(
+                              "block px-4 py-2.5 text-sm font-medium transition-colors",
+                              isChildActive
+                                ? "text-sun-700 bg-sage-100/80 font-semibold"
+                                : "text-ink hover:text-sun-700 hover:bg-sage-100/60"
+                            )}
+                          >
+                            {child.label}
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )
+              }
+
               return (
                 <Link
                   key={item.label}

@@ -50,6 +50,7 @@ export default function NewsPreview() {
                         src={leadArticle.featuredImage.src}
                         alt={leadArticle.featuredImage.alt}
                         fill
+                        sizes="(min-width: 1024px) 60vw, 100vw"
                         className="object-cover transition-transform duration-700 group-hover:scale-105"
                       />
                     )}

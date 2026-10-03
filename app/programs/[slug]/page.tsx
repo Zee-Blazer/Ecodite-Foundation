@@ -12,19 +12,29 @@ export function generateStaticParams() {
   }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const program = getProgramBySlug(params.slug);
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const program = getProgramBySlug(slug);
   if (!program) return { title: 'Not Found' };
-  
+
   return {
     title: program.title.value,
     description: program.description.value,
   };
 }
 
-export default function ProgramPage({ params }: { params: { slug: string } }) {
-  const program = getProgramBySlug(params.slug);
-  
+export default async function ProgramPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const program = getProgramBySlug(slug);
+
   if (!program) {
     notFound();
   }
