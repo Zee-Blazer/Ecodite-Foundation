@@ -32,7 +32,6 @@ export default function Footer() {
             <ul className="flex flex-col gap-2.5 text-sm text-sage-100/90">
               <li><Link href="/" className="hover:text-sun-500 transition-colors">Home</Link></li>
               <li><Link href="/about" className="hover:text-sun-500 transition-colors">About Us</Link></li>
-              <li><Link href="/chairmans-corner" className="hover:text-sun-500 transition-colors">Chairman&apos;s Corner</Link></li>
               <li><Link href="/programs" className="hover:text-sun-500 transition-colors">Our Programs</Link></li>
               <li><Link href="/gallery" className="hover:text-sun-500 transition-colors">Gallery</Link></li>
               <li><Link href="/news" className="hover:text-sun-500 transition-colors">News &amp; Updates</Link></li>
@@ -46,7 +45,6 @@ export default function Footer() {
             </h4>
             <div className="flex flex-col gap-2.5 text-sm text-sage-100/90">
               <Link href="/contact" className="hover:text-sun-500 transition-colors">Contact Us</Link>
-              <Link href="/donate" className="hover:text-sun-500 transition-colors">Donate &amp; Support</Link>
               {config.contact.email.value && !config.contact.email.isPlaceholder && (
                 <a href={`mailto:${config.contact.email.value}`} className="hover:text-sun-500 transition-colors break-all">
                   {config.contact.email.value}

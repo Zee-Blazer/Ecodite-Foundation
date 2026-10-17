@@ -43,7 +43,6 @@ export default async function ProgramPage({
     <div className="flex flex-col min-h-screen">
       <PageHero
         title={program.title.value}
-        description={program.description.value}
         image={program.image}
         breadcrumbs={[
           { label: 'Home', href: '/' },

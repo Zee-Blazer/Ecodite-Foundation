@@ -36,13 +36,10 @@ function ProgramCard({ program, className }: { program: Program; className?: str
       
       <div className="flex flex-col flex-1 justify-between gap-3 transition-transform duration-300 group-hover:translate-y-0.5">
         <div>
-          <span className="text-eyebrow text-sun-700 block mb-1">
-            {program.category}
-          </span>
           <h3 className="text-h3 text-ink mb-2">
             {program.title.value}
           </h3>
-          <p className="text-body text-ink-muted line-clamp-3">
+          <p className="text-body text-ink-muted leading-relaxed">
             {program.description.value}
           </p>
         </div>

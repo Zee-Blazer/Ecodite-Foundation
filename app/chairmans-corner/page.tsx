@@ -9,8 +9,8 @@ import MediaPlaceholder from '@/components/ui/MediaPlaceholder';
 import VideoPlaceholder from '@/components/ui/VideoPlaceholder';
 
 export const metadata: Metadata = {
-  title: "Chairman's Corner | Edith Chukwuyem Osiagwu",
-  description: "Official welcome message from Edith Chukwuyem Osiagwu, Founder of Ecodite Educational Foundation.",
+  title: "Chairman's Corner | Edith Osiagwu",
+  description: "Official welcome message from Edith Osiagwu, Founder of Ecodite Educational Foundation.",
 };
 
 export default function ChairmansCornerPage() {
@@ -81,9 +81,6 @@ export default function ChairmansCornerPage() {
                   <h1 className="text-h2 md:text-display-lg text-green-950 font-display">
                     {data.welcomeHeadline || 'Welcome to Ecodite Educational Foundation'}
                   </h1>
-                  <p className="text-body text-ink-muted">
-                    A welcome address by <span className="font-semibold text-ink">{data.name.value}</span>, {data.title.value}
-                  </p>
                 </div>
                 
                 {/* Letter Body */}

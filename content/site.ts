@@ -3,7 +3,7 @@ import type { SiteConfig } from '../types/content';
 export const siteConfig: SiteConfig = {
   name: 'Ecodite Foundation',
   legalName: 'Ecodite Educational Foundation',
-  description: 'Creating opportunities for young people to learn, discover their potential, develop practical skills and build a future shaped by creativity and knowledge.',
+  description: 'Creating opportunities for young people to learn, discover their potential, develop practical skills and build a future shaped by knowledge and creativity.',
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://ecoditefoundation.org',
   contact: {
     address: { value: 'Placeholder Address', isPlaceholder: true },
@@ -35,7 +35,7 @@ export const siteConfig: SiteConfig = {
         { label: 'Library', href: '/programs/library' },
         { label: 'Resource Center', href: '/programs/resource-center' },
         { label: 'Vocational Training', href: '/programs/vocational-training' },
-        { label: 'Mentorship', href: '/programs/mentorship' },
+        { label: 'Career Mentorship', href: '/programs/mentorship' },
       ],
     },
     {

@@ -3,7 +3,7 @@ import type { HeroData, HomeIntro, HomeStatement, HomeChairmanPreview, HomeSuppo
 export const heroData: HeroData = {
   eyebrow: 'ECODITE FOUNDATION',
   headline: { value: 'Learn, Create, Become.', isPlaceholder: false, status: 'draft' },
-  supportCopy: { value: 'Creating opportunities for young people to learn, discover their potential, develop practical skills and build a future shaped by creativity and knowledge.', isPlaceholder: false, status: 'draft' },
+  supportCopy: { value: 'Creating opportunities for young people to learn, discover their potential, develop practical skills and build a future shaped by knowledge and creativity.', isPlaceholder: false, status: 'draft' },
   primaryCta: { label: 'EXPLORE OUR PROGRAMS', href: '/programs' },
   media: { src: '/videos/hero-vid-1.mp4', alt: 'School kids actively learning and collaborating with computers', ratio: '16:9', description: 'Video of school kids engaged in study, technology, and learning sessions.', isPlaceholder: false }
 };
@@ -22,20 +22,20 @@ export const homeStatement: HomeStatement = {
 
 export const homeChairmanPreview: HomeChairmanPreview = {
   portrait: {
-    src: '/images/leadership/edith-chukwuyem-osiagwu.jpg',
-    alt: 'Portrait of Edith Chukwuyem Osiagwu, Founder of Ecodite Educational Foundation',
+    src: '/images/leadership/edith-osiagwu.jpg',
+    alt: 'Portrait of Edith Osiagwu, Founder of Ecodite Educational Foundation',
     ratio: '4:5',
-    description: 'Portrait of Edith Chukwuyem Osiagwu',
+    description: 'Portrait of Edith Osiagwu',
     isPlaceholder: false,
   },
   eyebrow: "Chairman's Corner",
   welcomeHeadline: 'Welcome to Ecodite Educational Foundation',
   quote: {
-    value: 'At Ecodite, we believe that every child deserves an opportunity to learn, grow, discover their potential and build a meaningful future.',
+    value: 'At Ecodite, we believe that every child deserves the opportunity to learn, grow, and discover their potential to build a meaningful future.',
     isPlaceholder: false,
   },
-  signature: { value: 'Edith Chukwuyem Osiagwu', isPlaceholder: false },
-  name: { value: 'Edith Chukwuyem Osiagwu', isPlaceholder: false },
+  signature: { value: 'Edith Osiagwu', isPlaceholder: false },
+  name: { value: 'Edith Osiagwu', isPlaceholder: false },
   title: 'Founder, Ecodite Educational Foundation',
   link: { label: 'Read the full message', href: '/chairmans-corner' },
 };

@@ -11,17 +11,6 @@ export default function ProgramDetail({ program }: { program: Program }) {
   return (
     <article className="py-24 bg-cream min-h-screen">
       <Container width="reading" className="space-y-16">
-        
-        {/* Introduction */}
-        {program.introduction && (
-          <Reveal>
-            <div className="prose prose-lg prose-green max-w-none text-ink-muted">
-              <p className="text-xl leading-relaxed text-green-950 font-medium">
-                {program.introduction.value}
-              </p>
-            </div>
-          </Reveal>
-        )}
 
         {/* What it does & Who it serves */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">

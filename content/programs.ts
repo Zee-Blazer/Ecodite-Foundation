@@ -5,7 +5,7 @@ export const programs: Program[] = [
     slug: 'library',
     title: { value: 'Library', isPlaceholder: false },
     description: {
-      value: 'A well-stocked literary sanctuary providing curriculum texts, literature, and quiet study spaces to cultivate reading and academic inquiry.',
+      value: 'We support schools in setting up or revitalizing their libraries into engaging and inspiring learning spaces. Our goal is to create environments where students go beyond exam preparation to develop a genuine love of learning, discover new interests, and gain knowledge and confidence.',
       isPlaceholder: false,
     },
     category: 'Learning & Education',
@@ -18,7 +18,7 @@ export const programs: Program[] = [
     },
     featured: true,
     introduction: {
-      value: 'Our community library offers a calm, well-resourced learning sanctuary for students and lifelong learners. By making textbooks, literature, and scholarly reference materials accessible to all, we foster a deep, lifelong passion for reading, independent discovery, and critical thought.',
+      value: 'We support schools in setting up or revitalizing their libraries into engaging and inspiring learning spaces. Our goal is to create environments where students go beyond exam preparation to develop a genuine love of learning, discover new interests, and gain knowledge and confidence.',
       isPlaceholder: false,
     },
     whatItDoes: {
@@ -46,7 +46,7 @@ export const programs: Program[] = [
     slug: 'resource-center',
     title: { value: 'Resource Center', isPlaceholder: false },
     description: {
-      value: 'High-speed internet workstations, digital learning tools, and research databases bridging the digital divide for young researchers.',
+      value: 'We create vibrant Resource Centres in schools and communities, giving young people welcoming spaces to learn, explore, build new skills, embrace creativity and develop lifelong skills to succeed in both school and life.',
       isPlaceholder: false,
     },
     category: 'Digital Skills',
@@ -59,7 +59,7 @@ export const programs: Program[] = [
     },
     featured: false,
     introduction: {
-      value: 'The Ecodite Resource Center delivers open digital access to young minds who lack reliable internet and computing hardware at home. Equipped with modern computers, printing hubs, and curated research platforms, it empowers students to bridge the digital divide.',
+      value: 'We create vibrant Resource Centres in schools and communities, giving young people welcoming spaces to learn, explore, build new skills, embrace creativity and develop lifelong skills to succeed in both school and life.',
       isPlaceholder: false,
     },
     whatItDoes: {
@@ -87,7 +87,7 @@ export const programs: Program[] = [
     slug: 'vocational-training',
     title: { value: 'Vocational Training', isPlaceholder: false },
     description: {
-      value: 'Hands-on practical crafts, technical trades, and market-ready enterprise skills driving youth self-reliance and economic independence.',
+      value: 'We establish vocational centres that provide young people with practical skills, creative opportunities, and hands-on training to support career development, entrepreneurship, and economic independence.',
       isPlaceholder: false,
     },
     category: 'Skills Development',
@@ -100,7 +100,7 @@ export const programs: Program[] = [
     },
     featured: false,
     introduction: {
-      value: 'Our Vocational Training programme bridges education and economic self-sufficiency. Through rigorous hands-on instruction in marketable crafts, creative media, and technical trades, we equip young people with the tangible skills needed to create sustainable livelihoods.',
+      value: 'We establish vocational centres that provide young people with practical skills, creative opportunities, and hands-on training to support career development, entrepreneurship, and economic independence.',
       isPlaceholder: false,
     },
     whatItDoes: {
@@ -126,9 +126,9 @@ export const programs: Program[] = [
   },
   {
     slug: 'mentorship',
-    title: { value: 'Mentorship', isPlaceholder: false },
+    title: { value: 'Career Mentorship', isPlaceholder: false },
     description: {
-      value: 'One-on-one professional guidance, career roadmapping, and ethical leadership development connecting youth with accomplished role models.',
+      value: 'Through guidance, mentorship, and exposure to diverse career paths, we connect young people with knowledge, experiences, and role models that inspire them to set meaningful goals and pursue careers aligned with their interests, talents, and potential.',
       isPlaceholder: false,
     },
     category: 'Mentorship & Personal Development',
@@ -141,7 +141,7 @@ export const programs: Program[] = [
     },
     featured: false,
     introduction: {
-      value: 'Behind every transformative journey is a mentor who believed first. The Ecodite Mentorship Programme matches ambitious young minds with accomplished professionals, creating empowering relationships that nurture leadership, ethical grounding, and ambitious career ambitions.',
+      value: 'Through guidance, mentorship, and exposure to diverse career paths, we connect young people with knowledge, experiences, and role models that inspire them to set meaningful goals and pursue careers aligned with their interests, talents, and potential.',
       isPlaceholder: false,
     },
     whatItDoes: {
