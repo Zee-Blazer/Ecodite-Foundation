@@ -9,9 +9,9 @@ export const heroData: HeroData = {
 };
 
 export const homeIntro: HomeIntro = {
-  eyebrow: '01 / Who we are',
+  eyebrow: 'Who we are',
   headline: { value: 'Building people. Building possibilities. Building tomorrow.', isPlaceholder: false, status: 'draft' },
-  body: { value: '[FOUNDATION INTRODUCTION]', isPlaceholder: true },
+  body: { value: '', isPlaceholder: false },
   link: { label: 'Learn more about us', href: '/about' },
   image: { src: '/images/home/young-adults-collaborating-at-whiteboard.jpeg', alt: 'Young adults collaborating at a whiteboard', ratio: '4:5', description: 'Intro visual', isPlaceholder: false }
 };

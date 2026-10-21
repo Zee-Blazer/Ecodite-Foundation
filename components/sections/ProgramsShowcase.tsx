@@ -63,14 +63,10 @@ export default function ProgramsShowcase() {
     <section className="section-sage-50 py-[var(--section-padding)]">
       <Container>
         <Reveal>
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-16">
+          <div className="mb-12 md:mb-16">
             <SectionHeading 
               heading="Our programs" 
-              className="w-full md:w-1/2"
             />
-            <p className="text-body-lg text-ink-muted w-full md:w-1/2 md:text-right max-w-md ml-auto">
-              Creating pathways for learning, practical skills, and youth mentorship.
-            </p>
           </div>
         </Reveal>
 

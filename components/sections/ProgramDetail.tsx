@@ -8,9 +8,22 @@ import MediaPlaceholder from '../ui/MediaPlaceholder';
 import SectionHeading from '../ui/SectionHeading';
 
 export default function ProgramDetail({ program }: { program: Program }) {
+  const introText = program.introduction?.value || program.description?.value;
+
   return (
     <article className="py-24 bg-cream min-h-screen">
       <Container width="reading" className="space-y-16">
+
+        {/* Introduction */}
+        {introText && (
+          <Reveal>
+            <div className="prose prose-lg prose-green max-w-none text-ink-muted">
+              <p className="text-xl leading-relaxed text-green-950 font-medium">
+                {introText}
+              </p>
+            </div>
+          </Reveal>
+        )}
 
         {/* What it does & Who it serves */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">

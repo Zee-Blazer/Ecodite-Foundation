@@ -13,20 +13,30 @@ export default function IntroSplit() {
     <section className="section-cream py-[var(--section-padding)] overflow-hidden">
       <Container>
         <Reveal>
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-6 items-center relative">
-            {/* Left side (cols 1-6) */}
-            <div className="md:col-span-6 flex flex-col gap-6 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+            {/* Left Content (cols 1-7) */}
+            <div className="lg:col-span-7 flex flex-col gap-6">
               <span className="text-eyebrow text-ink-muted">
                 {data.eyebrow}
               </span>
-              <h2 className="text-display-lg text-ink">
+              <h2 className="text-display-lg text-ink font-medium leading-tight">
                 {data.headline.value}
               </h2>
+              {data.body?.value && (
+                <p className="text-body-lg text-ink-muted max-w-xl">
+                  {data.body.value}
+                </p>
+              )}
+              <div className="pt-2">
+                <ArrowLink href={data.link.href}>
+                  {data.link.label}
+                </ArrowLink>
+              </div>
             </div>
-            
-            {/* Image intersecting the gap */}
-            <div className="hidden md:block absolute left-[45%] top-1/2 -translate-y-1/2 w-[22%] z-0">
-              <div className="relative w-full aspect-[4/5]">
+
+            {/* Right Visual (cols 8-12) */}
+            <div className="lg:col-span-5">
+              <div className="relative w-full aspect-[4/3] sm:aspect-[4/5] rounded-[var(--radius-image)] overflow-hidden shadow-sm">
                 {data.image.isPlaceholder ? (
                   <MediaPlaceholder 
                     label="INTRO VISUAL" 
@@ -40,22 +50,10 @@ export default function IntroSplit() {
                     src={data.image.src} 
                     alt={data.image.alt} 
                     fill 
-                    sizes="(min-width: 768px) 30vw, 80vw"
-                    className="object-cover rounded-sm" 
+                    sizes="(min-width: 1024px) 38vw, (min-width: 640px) 50vw, 92vw"
+                    className="object-cover" 
                   />
                 )}
-              </div>
-            </div>
-
-            {/* Right side (cols 8-12) */}
-            <div className="md:col-span-5 md:col-start-8 flex flex-col gap-6 relative z-10">
-              <p className="text-body-lg text-ink-muted">
-                {data.body.value}
-              </p>
-              <div>
-                <ArrowLink href={data.link.href}>
-                  {data.link.label}
-                </ArrowLink>
               </div>
             </div>
           </div>
