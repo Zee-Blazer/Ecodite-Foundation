@@ -5,10 +5,10 @@ import type { MediaSlot } from '@/types/content';
 
 export default function VisualStory() {
   const media: MediaSlot = {
-    src: '/images/home/children-watching-3d-printer.jpeg',
-    alt: 'Children watching a 3D printer during a technology workshop',
+    src: '/images/home/secondary-school-resource-centre.jpeg',
+    alt: 'Secondary school students in uniform actively engaged in reading, computers, and science kits in the school resource centre',
     ratio: '21:9',
-    description: '[IMPACT IMAGE/VIDEO] showing workshops, technology training, reading',
+    description: 'Secondary school students in uniform engaged in reading, science and computer workshops.',
     isPlaceholder: false
   };
 

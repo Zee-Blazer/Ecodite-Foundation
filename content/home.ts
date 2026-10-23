@@ -5,7 +5,7 @@ export const heroData: HeroData = {
   headline: { value: 'Learn, Create, Become.', isPlaceholder: false, status: 'draft' },
   supportCopy: { value: 'Creating opportunities for young people to learn, discover their potential, develop practical skills and build a future shaped by knowledge and creativity.', isPlaceholder: false, status: 'draft' },
   primaryCta: { label: 'EXPLORE OUR PROGRAMS', href: '/programs' },
-  media: { src: '/videos/hero-vid-1.mp4', alt: 'School kids actively learning and collaborating with computers', ratio: '16:9', description: 'Video of school kids engaged in study, technology, and learning sessions.', isPlaceholder: false }
+  media: { src: '/videos/hero-vid-2.mp4', alt: 'Secondary school students in uniform actively learning robotics and technology in the classroom', ratio: '16:9', description: 'Video of secondary school students engaged in technology and practical learning.', isPlaceholder: false }
 };
 
 export const homeIntro: HomeIntro = {
@@ -13,7 +13,7 @@ export const homeIntro: HomeIntro = {
   headline: { value: 'Building people. Building possibilities. Building tomorrow.', isPlaceholder: false, status: 'draft' },
   body: { value: '', isPlaceholder: false },
   link: { label: 'Learn more about us', href: '/about' },
-  image: { src: '/images/home/young-adults-collaborating-at-whiteboard.jpeg', alt: 'Young adults collaborating at a whiteboard', ratio: '4:5', description: 'Intro visual', isPlaceholder: false }
+  image: { src: '/images/home/secondary-students-studying.jpeg', alt: 'Secondary school students in uniform collaborating on whiteboard in school resource room', ratio: '4:5', description: 'Intro visual', isPlaceholder: false }
 };
 
 export const homeStatement: HomeStatement = {

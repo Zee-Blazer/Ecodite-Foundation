@@ -3,8 +3,8 @@ import type { GalleryItem } from '../types/content';
 export const galleryItems: GalleryItem[] = [
   {
     id: 'g1',
-    src: '/images/gallery/youth-coding-hackathon-event.jpeg',
-    alt: 'Youth participating in a coding hackathon event',
+    src: '/images/news/secondary-school-partnership-donation.jpeg',
+    alt: 'Secondary school students receiving new textbooks and learning kits from the foundation',
     category: 'Events',
     width: 800,
     height: 600,

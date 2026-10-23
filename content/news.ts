@@ -8,7 +8,7 @@ export const articles: NewsArticle[] = [
     body: { value: 'This is the body for placeholder news article 1.', isPlaceholder: true },
     date: '2026-09-01T00:00:00Z',
     category: 'Update',
-    featuredImage: { src: '/images/news/speaker-presenting-at-tech-hub.jpeg', alt: 'A speaker presenting at a tech hub', ratio: '16:9', description: 'News event', isPlaceholder: false },
+    featuredImage: { src: '/images/news/secondary-school-workshop-speaker.jpeg', alt: 'Educational speaker engaging secondary school students during an interactive school session', ratio: '16:9', description: 'News event', isPlaceholder: false },
     isPlaceholder: true
   },
   {
@@ -18,7 +18,7 @@ export const articles: NewsArticle[] = [
     body: { value: 'This is the body for placeholder news article 2.', isPlaceholder: true },
     date: '2026-09-05T00:00:00Z',
     category: 'Announcement',
-    featuredImage: { src: '/images/news/professional-handshake.jpeg', alt: 'A professional handshake symbolizing a new partnership', ratio: '16:9', description: 'News event', isPlaceholder: false },
+    featuredImage: { src: '/images/news/secondary-school-partnership-donation.jpeg', alt: 'School principal and foundation director presenting new textbooks and learning kits to secondary school students', ratio: '16:9', description: 'News event', isPlaceholder: false },
     isPlaceholder: true
   },
   {

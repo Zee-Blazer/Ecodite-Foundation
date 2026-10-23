@@ -63,20 +63,6 @@ export default function ProgramDetail({ program }: { program: Program }) {
           </Reveal>
         )}
 
-        {/* Activities */}
-        {program.activities && program.activities.length > 0 && (
-          <Reveal>
-            <h3 className="text-h3 text-green-900 mb-6">Key Activities</h3>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {program.activities.map((act, i) => (
-                <li key={i} className="bg-white p-6 rounded-sm border border-line flex items-start gap-4">
-                  <span className="text-sun-500 text-lg">✦</span>
-                  <span className="text-ink-muted leading-snug">{act.value}</span>
-                </li>
-              ))}
-            </ul>
-          </Reveal>
-        )}
 
         {/* Gallery */}
         {program.gallery && program.gallery.length > 0 && (

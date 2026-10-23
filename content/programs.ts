@@ -10,8 +10,8 @@ export const programs: Program[] = [
     },
     category: 'Learning & Education',
     image: {
-      src: '/images/programs/youths-collaborating-at-computers.jpeg',
-      alt: 'Students engaged in study and collaborative reading inside the library',
+      src: '/images/programs/secondary-students-library.jpeg',
+      alt: 'Nigerian secondary school students engaged in reading and study inside the school library',
       ratio: '16:9',
       description: 'Students in a modern, quiet study library',
       isPlaceholder: false,
@@ -51,8 +51,8 @@ export const programs: Program[] = [
     },
     category: 'Digital Skills',
     image: {
-      src: '/images/programs/woman-coding-on-laptop.jpeg',
-      alt: 'Young learner operating a computer workstation in the resource center',
+      src: '/images/programs/secondary-students-computer-lab.jpeg',
+      alt: 'Nigerian secondary school students in uniform learning digital skills on computers in the school resource center',
       ratio: '16:9',
       description: 'Resource center computer lab',
       isPlaceholder: false,
@@ -63,17 +63,26 @@ export const programs: Program[] = [
       isPlaceholder: false,
     },
     whatItDoes: {
-      value: 'Provides desktop computer terminals, high-speed broadband, printing/scanning services, and educational software for school assignments, university applications, and online skill development.',
+      value:
+        'Provides educational materials, digital learning resources, and a welcoming space that encourages reading, research, and self-development. It also offers practical activities and creative projects that help young people discover their talents and develop useful skills.',
       isPlaceholder: false,
     },
     whoItServes: {
-      value: 'Students, young jobseekers, and aspiring innovators who need reliable access to computer hardware, broadband internet, and educational media.',
+      value:
+        'Students, and aspiring innovators who need reliable access to broadband internet, educational media and performing space.',
       isPlaceholder: false,
     },
     objectives: [
-      { value: 'Eliminate technological barriers that prevent youth from completing school research and online coursework.', isPlaceholder: false },
-      { value: 'Equip learners with day-to-day computer proficiency, document authoring, and web navigation skills.', isPlaceholder: false },
-      { value: 'Facilitate university admissions applications, scholarship research, and educational discovery.', isPlaceholder: false },
+      {
+        value:
+          'Eliminate barriers that prevent youngsters from discovering their potential at an early stage.',
+        isPlaceholder: false,
+      },
+      {
+        value:
+          'To provide young people with opportunities to discover their talents, develop practical skills, and transform their ideas into creative solutions and productive ventures.',
+        isPlaceholder: false,
+      },
     ],
     activities: [
       { value: 'Open-access computer labs for academic research and assignments.', isPlaceholder: false },
@@ -92,8 +101,8 @@ export const programs: Program[] = [
     },
     category: 'Skills Development',
     image: {
-      src: '/images/programs/teenager-using-digital-drawing-tablet.jpeg',
-      alt: 'Youth participating in practical vocational craft training',
+      src: '/images/programs/secondary-students-vocational-workshop.jpeg',
+      alt: 'Nigerian secondary school students in uniform participating in practical vocational electronics and technical craft training',
       ratio: '16:9',
       description: 'Vocational workshop session',
       isPlaceholder: false,
@@ -104,11 +113,13 @@ export const programs: Program[] = [
       isPlaceholder: false,
     },
     whatItDoes: {
-      value: 'Conducts intensive apprenticeships and modular training courses covering digital fabrication, craft production, electronics, tailoring, and micro-business management.',
+      value:
+        'Provides hands-on training in skills like making things with digital tools, crafts, electronics, tailoring, and how to start and manage a small business.',
       isPlaceholder: false,
     },
     whoItServes: {
-      value: 'Secondary school leavers, non-formal learners, unemployed youth, and creative makers eager to turn practical skills into viable commercial enterprises.',
+      value:
+        'Secondary school students and leavers, non-formal learners, and creative makers eager to turn practical skills into viable commercial enterprises.',
       isPlaceholder: false,
     },
     objectives: [
@@ -133,8 +144,8 @@ export const programs: Program[] = [
     },
     category: 'Mentorship & Personal Development',
     image: {
-      src: '/images/programs/adults-reviewing-project-on-tablet.jpeg',
-      alt: 'Mentor providing career guidance to an ambitious student',
+      src: '/images/programs/secondary-students-career-mentorship.jpeg',
+      alt: 'Nigerian secondary school students in uniform receiving career mentorship and educational guidance from a mentor',
       ratio: '16:9',
       description: 'Personal mentorship and coaching session',
       isPlaceholder: false,
@@ -145,7 +156,8 @@ export const programs: Program[] = [
       isPlaceholder: false,
     },
     whatItDoes: {
-      value: 'Facilitates tailored 6-to-12 month mentoring cohorts, career discovery panel sessions, university pathway guidance, and ethical leadership seminars.',
+      value:
+        'Provides 6–12 months of mentorship, career talks, guidance on choosing courses and universities, and training on good values and leadership skills.',
       isPlaceholder: false,
     },
     whoItServes: {

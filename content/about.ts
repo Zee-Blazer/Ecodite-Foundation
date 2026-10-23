@@ -12,8 +12,8 @@ export const aboutData: AboutData = {
   values: [],
   approach: { value: '[OUR APPROACH]', isPlaceholder: true },
   heroImage: {
-    src: '/images/home/people-collaborating-in-community.jpeg',
-    alt: 'Members of a community collaborating with Ecodite Foundation',
+    src: '/images/about/secondary-students-learning-center.jpeg',
+    alt: 'Nigerian secondary school students in uniform learning with textbooks and laptop in school library',
     ratio: '16:9',
     description: 'Hero visual',
     isPlaceholder: false,

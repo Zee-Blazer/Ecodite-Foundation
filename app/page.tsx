@@ -5,10 +5,10 @@ import ProgramsShowcase from '@/components/sections/ProgramsShowcase'
 import ImpactStats from '@/components/sections/ImpactStats'
 import VisualStory from '@/components/sections/VisualStory'
 import GalleryPreview from '@/components/sections/GalleryPreview'
-import EventsPreview from '@/components/sections/EventsPreview'
-import NewsPreview from '@/components/sections/NewsPreview'
+// import EventsPreview from '@/components/sections/EventsPreview'
+// import NewsPreview from '@/components/sections/NewsPreview'
 import SupportCta from '@/components/sections/SupportCta'
-import Newsletter from '@/components/sections/Newsletter'
+// import Newsletter from '@/components/sections/Newsletter'
 import { getSiteConfig } from '@/lib/content'
 
 function OrganizationJsonLd() {
@@ -104,16 +104,16 @@ export default function HomePage() {
       <GalleryPreview />
 
       {/* 9. Upcoming events */}
-      <EventsPreview />
+      {/* <EventsPreview /> */}
 
       {/* 10. News & updates */}
-      <NewsPreview />
+      {/* <NewsPreview /> */}
 
       {/* 11. Support CTA */}
       <SupportCta />
 
       {/* 12. Newsletter */}
-      <Newsletter />
+      {/* <Newsletter /> */}
     </>
   )
 }

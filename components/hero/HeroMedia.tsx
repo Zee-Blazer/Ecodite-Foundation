@@ -10,7 +10,6 @@ export interface HeroMediaProps {
 }
 
 const HERO_VIDEOS = [
-  '/videos/hero-vid-1.mp4',
   '/videos/hero-vid-2.mp4',
 ];
 
@@ -68,7 +67,7 @@ export default function HeroMedia({ media }: HeroMediaProps) {
 
       {/* Fallback image in case video fails to load or on data-saver */}
       <Image
-        src="/images/home/children-watching-3d-printer.jpeg"
+        src="/images/home/secondary-school-resource-centre.jpeg"
         alt={media.alt}
         fill
         priority
