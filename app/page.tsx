@@ -3,7 +3,7 @@ import IntroSplit from '@/components/sections/IntroSplit'
 import Statement from '@/components/sections/Statement'
 import ProgramsShowcase from '@/components/sections/ProgramsShowcase'
 import ImpactStats from '@/components/sections/ImpactStats'
-import VisualStory from '@/components/sections/VisualStory'
+// import VisualStory from '@/components/sections/VisualStory'
 import GalleryPreview from '@/components/sections/GalleryPreview'
 // import EventsPreview from '@/components/sections/EventsPreview'
 // import NewsPreview from '@/components/sections/NewsPreview'
@@ -96,9 +96,6 @@ export default function HomePage() {
 
       {/* 6. Impact */}
       <ImpactStats />
-
-      {/* 7. Visual story */}
-      <VisualStory />
 
       {/* 8. Gallery preview */}
       <GalleryPreview />

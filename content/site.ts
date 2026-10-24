@@ -20,10 +20,9 @@ export const siteConfig: SiteConfig = {
   nav: [
     { label: 'Home', href: '/' },
     {
-      label: 'About Us',
+      label: 'Who We Are',
       href: '/about',
       children: [
-        { label: 'Who We Are', href: '/about' },
         { label: "Chairman's Corner", href: '/chairmans-corner' },
       ],
     },

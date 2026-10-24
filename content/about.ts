@@ -10,7 +10,11 @@ export const aboutData: AboutData = {
     isPlaceholder: false,
   },
   values: [],
-  approach: { value: '[OUR APPROACH]', isPlaceholder: true },
+  approach: {
+    value:
+      'Our primary target audience is secondary school students, recognizing this pivotal stage as the optimal time to build lasting intellectual curiosity, practical skills, and self-confidence. To nurture their potential, we prioritize the creation and revitalization of vibrant school libraries and hands-on pre-vocational learning spaces tailored specifically to their academic and creative development.\n\nOur approach is grounded in a methodical, impact-driven process: each project begins by identifying what is currently in existence within the school and community; we then evaluate the environment to identify loopholes and resource deficits; from these findings, we deliver targeted recommendations; and finally, we execute a complete, sustainable setup—equipping students with modern books, tools, and inspiring learning spaces.',
+    isPlaceholder: false,
+  },
   heroImage: {
     src: '/images/about/secondary-students-learning-center.jpeg',
     alt: 'Nigerian secondary school students in uniform learning with textbooks and laptop in school library',

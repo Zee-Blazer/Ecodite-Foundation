@@ -17,7 +17,7 @@ export default function TermsPage() {
 
   return (
     <div className="flex min-h-screen flex-col">
-      <section className="bg-green-800 py-12 text-cream">
+      <section className="bg-green-800 pt-32 pb-12 md:pt-40 md:pb-16 text-cream">
         <Container width="reading">
           <h1 className="text-display-lg font-display mb-4">Terms & Conditions</h1>
           <p className="text-sage-100">Last updated: {new Date(pageData.lastUpdated).toLocaleDateString()}</p>

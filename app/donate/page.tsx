@@ -15,7 +15,7 @@ export default function DonatePage() {
 
   return (
     <div className="flex min-h-screen flex-col">
-      <section className="bg-green-800 py-16 md:py-24 text-cream">
+      <section className="bg-green-800 pt-32 pb-16 md:pt-40 md:pb-24 text-cream">
         <Container>
           <div className="max-w-3xl">
             <h1 className="text-display-lg font-display mb-6">Support the future.</h1>

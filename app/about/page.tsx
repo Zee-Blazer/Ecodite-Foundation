@@ -9,7 +9,7 @@ import LeadershipGrid from '@/components/sections/LeadershipGrid';
 import SectionHeading from '@/components/ui/SectionHeading';
 
 export const metadata: Metadata = {
-  title: 'About Us',
+  title: 'Who We Are',
   description: 'Learn more about the Ecodite Educational Foundation, our mission, vision, and the people behind our work.',
 };
 
@@ -20,21 +20,20 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col min-h-screen">
       <PageHero
-        title="About Us"
+        title="Who We Are"
         breadcrumbs={[
           { label: 'Home', href: '/' },
-          { label: 'About Us', href: '/about' },
+          { label: 'Who We Are', href: '/about' },
         ]}
         image={aboutData.heroImage}
       />
 
-      {/* Who We Are */}
+      {/* Who We Are Content */}
       <section className="py-24 bg-cream">
         <Container width="reading">
           <Reveal>
-            <SectionHeading heading="Who We Are" className="mb-8" />
             <div className="prose prose-lg prose-green max-w-none text-ink-muted">
-              <p className="whitespace-pre-wrap">{aboutData.whoWeAre.value}</p>
+              <p className="whitespace-pre-wrap leading-relaxed text-body-lg">{aboutData.whoWeAre.value}</p>
             </div>
           </Reveal>
         </Container>

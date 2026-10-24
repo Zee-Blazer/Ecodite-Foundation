@@ -55,20 +55,44 @@ function ProgramCard({ program, className }: { program: Program; className?: str
   );
 }
 
-export default function ProgramsShowcase() {
+export interface ProgramsShowcaseProps {
+  showHeading?: boolean;
+  heading?: string;
+  introText?: string;
+  className?: string;
+  variant?: 'sage' | 'cream';
+}
+
+export default function ProgramsShowcase({
+  showHeading = true,
+  heading = 'Our programs',
+  introText,
+  className,
+  variant = 'cream',
+}: ProgramsShowcaseProps = {}) {
   const programs = getPrograms();
   if (!programs.length) return null;
 
   return (
-    <section className="section-sage-50 py-[var(--section-padding)]">
+    <section className={clsx(variant === 'sage' ? 'section-sage-50' : 'section-cream', 'py-[var(--section-padding)]', className)}>
       <Container>
-        <Reveal>
-          <div className="mb-12 md:mb-16">
-            <SectionHeading 
-              heading="Our programs" 
-            />
-          </div>
-        </Reveal>
+        {(showHeading || introText) && (
+          <Reveal>
+            <div className="mb-12 md:mb-16 max-w-3xl">
+              {showHeading && (
+                <SectionHeading 
+                  heading={heading} 
+                  className={introText ? "mb-4" : ""}
+                />
+              )}
+              {introText && (
+                <p className="text-body-lg text-ink-muted leading-relaxed">
+                  {introText}
+                </p>
+              )}
+            </div>
+          </Reveal>
+        )}
 
         <Reveal stagger>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 items-stretch">

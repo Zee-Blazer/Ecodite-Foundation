@@ -102,7 +102,7 @@ export const programs: Program[] = [
     category: 'Skills Development',
     image: {
       src: '/images/programs/secondary-students-vocational-workshop.jpeg',
-      alt: 'Nigerian secondary school students in uniform participating in practical vocational electronics and technical craft training',
+      alt: 'Nigerian secondary school students in uniform participating in practical vocational craft and tailoring training',
       ratio: '16:9',
       description: 'Vocational workshop session',
       isPlaceholder: false,
