@@ -10,8 +10,8 @@ export const programs: Program[] = [
     },
     category: 'Learning & Education',
     image: {
-      src: '/images/programs/secondary-students-library.jpeg',
-      alt: 'Nigerian secondary school students engaged in reading and study inside the school library',
+      src: '/images/programs/library-resource-study-space.webp',
+      alt: 'Modern school library and study space with bookshelves and individual learning carrels',
       ratio: '16:9',
       description: 'Students in a modern, quiet study library',
       isPlaceholder: false,
@@ -101,8 +101,8 @@ export const programs: Program[] = [
     },
     category: 'Skills Development',
     image: {
-      src: '/images/programs/secondary-students-vocational-workshop.jpeg',
-      alt: 'Nigerian secondary school students in uniform participating in practical vocational craft and tailoring training',
+      src: '/images/programs/vocational-tailoring-students.jpg',
+      alt: 'Students learning practical tailoring and pattern making with sewing machine and instructor',
       ratio: '16:9',
       description: 'Vocational workshop session',
       isPlaceholder: false,

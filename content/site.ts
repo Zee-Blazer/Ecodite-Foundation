@@ -42,7 +42,7 @@ export const siteConfig: SiteConfig = {
       href: '/gallery',
       children: [
         { label: 'Gallery', href: '/gallery' },
-        { label: 'News & Updates', href: '/news' },
+        // { label: 'News & Updates', href: '/news' },
       ],
     },
     { label: 'Contact', href: '/contact' },

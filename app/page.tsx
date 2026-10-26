@@ -2,7 +2,7 @@ import Hero from '@/components/hero/Hero'
 import IntroSplit from '@/components/sections/IntroSplit'
 import Statement from '@/components/sections/Statement'
 import ProgramsShowcase from '@/components/sections/ProgramsShowcase'
-import ImpactStats from '@/components/sections/ImpactStats'
+// import ImpactStats from '@/components/sections/ImpactStats'
 // import VisualStory from '@/components/sections/VisualStory'
 import GalleryPreview from '@/components/sections/GalleryPreview'
 // import EventsPreview from '@/components/sections/EventsPreview'
@@ -95,7 +95,7 @@ export default function HomePage() {
       <ProgramsShowcase />
 
       {/* 6. Impact */}
-      <ImpactStats />
+      {/* <ImpactStats /> */}
 
       {/* 8. Gallery preview */}
       <GalleryPreview />
