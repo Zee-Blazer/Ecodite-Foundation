@@ -13,7 +13,13 @@ export const homeIntro: HomeIntro = {
   headline: { value: 'Building people. Building possibilities. Building tomorrow.', isPlaceholder: false, status: 'draft' },
   body: { value: '', isPlaceholder: false },
   link: { label: 'Learn more about us', href: '/about' },
-  image: { src: '/images/home/secondary-students-studying.jpeg', alt: 'Secondary school students in uniform collaborating on whiteboard in school resource room', ratio: '4:5', description: 'Intro visual', isPlaceholder: false }
+  image: {
+    src: '/images/programs/secondary-students-vocational-workshop.jpeg',
+    alt: 'Nigerian secondary school students in uniform participating in practical vocational craft and tailoring training',
+    ratio: '4:5',
+    description: 'Intro visual',
+    isPlaceholder: false,
+  },
 };
 
 export const homeStatement: HomeStatement = {
