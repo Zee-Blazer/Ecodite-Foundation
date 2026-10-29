@@ -14,10 +14,10 @@ export const homeIntro: HomeIntro = {
   body: { value: '', isPlaceholder: false },
   link: { label: 'Learn more about us', href: '/about' },
   image: {
-    src: '/images/programs/secondary-students-vocational-workshop.jpeg',
-    alt: 'Nigerian secondary school students in uniform participating in practical vocational craft and tailoring training',
+    src: '/images/home/secondary-students-robotics-car.jpeg',
+    alt: 'Nigerian secondary school students in uniform collaborating on assembling and fixing a toy robotic car',
     ratio: '4:5',
-    description: 'Intro visual',
+    description: 'Students in uniform fixing and assembling a toy robotic car kit',
     isPlaceholder: false,
   },
 };
