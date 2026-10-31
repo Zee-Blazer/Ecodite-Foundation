@@ -39,8 +39,8 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: 'g5',
-    src: '/images/gallery/students-learning-automotive-mechanics.jpeg',
-    alt: 'Nigerian secondary school students in uniform learning practical automotive mechanics in a technical workshop',
+    src: '/images/gallery/students-watching-3d-printer.jpeg',
+    alt: 'Students watching a 3D printer at work',
     category: 'Workshops',
     width: 800,
     height: 600,
