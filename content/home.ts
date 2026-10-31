@@ -14,10 +14,10 @@ export const homeIntro: HomeIntro = {
   body: { value: '', isPlaceholder: false },
   link: { label: 'Learn more about us', href: '/about' },
   image: {
-    src: '/images/home/secondary-students-robotics-car.jpeg',
-    alt: 'Nigerian secondary school students in uniform collaborating on assembling and fixing a toy robotic car',
+    src: '/images/gallery/students-watching-3d-printer.jpeg',
+    alt: 'Students watching a 3D printer at work',
     ratio: '4:5',
-    description: 'Students in uniform fixing and assembling a toy robotic car kit',
+    description: 'Students watching a 3D printer at work',
     isPlaceholder: false,
   },
 };
