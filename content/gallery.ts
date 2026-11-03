@@ -37,13 +37,13 @@ export const galleryItems: GalleryItem[] = [
     height: 600,
     isPlaceholder: false
   },
-  {
-    id: 'g5',
-    src: '/images/gallery/students-watching-3d-printer.jpeg',
-    alt: 'Students watching a 3D printer at work',
-    category: 'Workshops',
-    width: 800,
-    height: 600,
-    isPlaceholder: false
-  }
+  // {
+  //   id: 'g5',
+  //   src: '/images/gallery/students-watching-3d-printer.jpeg',
+  //   alt: 'Students watching a 3D printer at work',
+  //   category: 'Workshops',
+  //   width: 800,
+  //   height: 600,
+  //   isPlaceholder: false
+  // }
 ];
